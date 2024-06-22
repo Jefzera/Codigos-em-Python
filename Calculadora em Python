@@ -1,0 +1,28 @@
+while True:
+    numero1 = input("Digite o primeiro número (ou 'Sair' para sair): ")
+    
+    if numero1 == 'sair':
+        break
+    
+    numero2 = input("Digite o segundo número: ")
+    sinal = input("Digite o sinal para fazer a conta (+, -, *, /): ")
+
+    if sinal == '+':
+        resultado = float(numero1) + float(numero2)
+        print(f"Resultado: {resultado}")
+    elif sinal == '-':
+        resultado = float(numero1) - float(numero2)
+        print(f"Resultado: {resultado}")
+    elif sinal == '*':
+        resultado = float(numero1) * float(numero2)
+        print(f"Resultado: {resultado}")
+    elif sinal == '/':
+        if float(numero2) != 0:
+            resultado = float(numero1) / float(numero2)
+            print(f"Resultado: {resultado}")
+        else:
+            print("Erro: divisão por zero!")
+    else:
+        print("Operação inválida!")
+
+print("Programa encerrado.")
